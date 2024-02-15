@@ -32,7 +32,7 @@ export default function ExampleCode() {
             <p className="text-slate-400 text-2xl">Example Code</p>
             <section className="bg-slate-300 p-5 rounded-md mt-5 flex justify-between items-center">
                 <code id="code">
-                    fetch('https://api-gaming.vercel.app/products') <br />
+                    fetch(&#39;https://api-gaming.vercel.app/products&#39;) <br />
                     .then(res=&gt;res.json()) <br />
                     .then(json=&gt;console.log(json))
                 </code>
