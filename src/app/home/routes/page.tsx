@@ -5,23 +5,23 @@ import Link from "next/link";
 export default function Routes(){
     return(
         <section className="w-full lg:w-3/5 mx-auto mt-20">
-            <p className="text-2xl text-slate-400 mb-5">Routes</p>
+            <p className="text-2xl text-slate-400 mb-5">Routes of products</p>
             <ul className="w-full lg:w-3/6 bg-slate-300 p-5 rounded-lg flex flex-col gap-5">
                 <li className="flex items-center justify-between">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"}>/products</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"} target="_blank">/products</Link>
                 </li>
                 <li className="flex items-center justify-between">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"}>/products/6542700933c25546cfde098e</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"}target="_blank">/products/6542700933c25546cfde098e</Link>
                 </li>
                 <li className="flex items-center justify-between">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/search?name=K631%20PRO%20WT%2065"}>/products/search?name=K631%20PRO%20WT%2065</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/search?name=K631%20PRO%20WT%2065"} target="_blank">/products/search?name=K631%20PRO%20WT%2065</Link>
                 </li>
                 <li className="flex items-center justify-between">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products-cart"}>/products/cart</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products-cart"} target="_blank">/products/cart</Link>
                 </li>
                 <li className="flex items-center justify-between">
                     <p className="font-bold text-purple-700">POST</p>
@@ -40,9 +40,12 @@ export default function Routes(){
                     <p className="text-red-600">/products-cart/:id</p>
                 </li>
             </ul>
-            <Button className="mt-5" color="secondary">
-                View details on Docs
-            </Button>
+            <Link href={"/docs"} target="_blank">
+                <Button className="mt-5" color="secondary">
+                    View details on Docs
+                </Button>
+            </Link>
+
         </section>
     )
 }

@@ -4,6 +4,8 @@
 
 :root{
     background-color: #1d2129;
+    scroll-behavior: smooth;
+
 
 }
 
@@ -15,6 +17,20 @@ body {
     border: solid 1px rgba(222, 218, 218, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37); */
     background-color: #1d2129;
+    scroll-behavior: smooth;
 }
+
+
+
+/* @media(max-width:768px){
+    #sidebar{
+        display: none;
+    }
+    #getAllProducts{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+} */
 
 

@@ -4,6 +4,7 @@ import { Inter, Outfit, Space_Mono } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
 import Navbar from "./navbar/page";
+import Footer from "./footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({subsets:["latin"]});
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Provider>
           <Navbar/>
           {children}
+          <Footer/>
         </Provider>
         
         </body>
