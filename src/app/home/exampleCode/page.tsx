@@ -15,17 +15,21 @@ export default function ExampleCode() {
     function copyToClipboard() {
         const code = document.getElementById('code');
         if (code) {
-            navigator.clipboard.writeText(code.textContent)
-                .then(() => {
-                    setCopied(true);
-                    
-                    
-                })
-                .catch((error) => {
-                    console.error('Error copying to clipboard:', error);
-                });
+            const text = code.textContent;
+            if (text) { // Verifica si text no es null ni undefined
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        setCopied(true);
+                    })
+                    .catch((error) => {
+                        console.error('Error copying to clipboard:', error);
+                    });
+            } else {
+                console.error('No text content found in the code element');
+            }
         }
     }
+    
 
     return (
         <div className="w-full lg:w-3/5 mx-auto mt-20">
