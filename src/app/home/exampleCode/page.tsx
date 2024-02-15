@@ -47,59 +47,58 @@ export default function ExampleCode() {
                 Try it !
             </Button>
 
-            { showCode && <section className="bg-slate-500 p-3 rounded-md mt-5 flex justify-between items-center" >
+            { showCode && 
+            <section className="bg-slate-500 p-3 rounded-md mt-5 flex justify-between items-center" >
                 <code>
                     <p>{'{'}</p>
                         <p className="ml-10">
                             <div className="flex">
-                                <p className="text-white">"_id"</p>: "6542700933c25546cfde098e",<br/>
+                                <p className="text-white">&quot;_id&quot;</p>: &quot;6542700933c25546cfde098e&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"name"</p>: "K631 PRO WT 65%",<br/>
+                                <p className="text-white">&quot;name&quot;</p>: &quot;K631 PRO WT 65%&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"price"</p>: 34.899,<br/>
+                                <p className="text-white">&quot;price&quot;</p>: 34.899,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"stock"</p>: 19,<br/>
+                                <p className="text-white">&quot;stock&quot;</p>: 19,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"inCart"</p>: false,<br/>
+                                <p className="text-white">&quot;inCart&quot;</p>: false,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"imageCard"</p>: "https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_360x.png?v=1681801748",<br/>
+                                <p className="text-white">&quot;imageCard&quot;</p>: &quot;https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_360x.png?v=1681801748&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"imageDetail"</p>: "https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_450x450.png?v=1681801748",<br/>
+                                <p className="text-white">&quot;imageDetail&quot;</p>: &quot;https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_450x450.png?v=1681801748&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"imageDetail1"</p>: "https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_1_450x450.jpg?v=1681801765",<br/>
+                                <p className="text-white">&quot;imageDetail1&quot;</p>: &quot;https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_1_450x450.jpg?v=1681801765&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"imageDetail2"</p>: "https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_2_450x450.jpg?v=1681801765",<br/>
+                                <p className="text-white">&quot;imageDetail2&quot;</p>: &quot;https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_2_450x450.jpg?v=1681801765&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"brand"</p>: "Redragon",<br/>
+                                <p className="text-white">&quot;brand&quot;</p>: &quot;Redragon&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"brandLogo"</p>: "https://www.redragonzone.com/cdn/shop/files/new-redragon-logo_180x.png?v=1613704782",<br/>
+                                <p className="text-white">&quot;brandLogo&quot;</p>: &quot;https://www.redragonzone.com/cdn/shop/files/new-redragon-logo_180x.png?v=1613704782&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"color"</p>: "blanco",<br/>
+                                <p className="text-white">&quot;color&quot;</p>: &quot;blanco&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"description"</p>: "La innovación transformadora con el teclado Redragon de intercambio en caliente con un 99.8%+ de compatibilidad con interruptores está disponible ahora. El diseño exclusivo de la estructura del socket hace que el montaje de los interruptores sea más sencillo y con menos oscilación. Conexión de 3 Modos - Equipado con la innovadora tecnología de conexión de tres modos de Redragon, cable USB-C, modos inalámbricos BT 3.0/5.0 y 2.4Ghz, lo que eleva la experiencia del usuario a otro nivel en todos los campos. Modo de Intercambio en Caliente y Interruptores Personalizados - Compatible con la mayoría de los tipos de interruptores en el mercado, ya sea de 3 pines o de 5 pines. Los interruptores mecánicos lineales personalizados silenciosos y el recorrido más suave de las teclas hacen que cada pulsación sea fácil y rápida de registrar. Es fácil de personalizar o actualizar según tus preferencias, sin necesidad de investigar en foros.",<br/>
+                                <p className="text-white">&quot;description&quot;</p>: &quot;La innovación transformadora con el teclado Redragon de intercambio en caliente con un 99.8%+ de compatibilidad con interruptores está disponible ahora. El diseño exclusivo de la estructura del socket hace que el montaje de los interruptores sea más sencillo y con menos oscilación. Conexión de 3 Modos - Equipado con la innovadora tecnología de conexión de tres modos de Redragon, cable USB-C, modos inalámbricos BT 3.0/5.0 y 2.4Ghz, lo que eleva la experiencia del usuario a otro nivel en todos los campos. Modo de Intercambio en Caliente y Interruptores Personalizados - Compatible con la mayoría de los tipos de interruptores en el mercado, ya sea de 3 pines o de 5 pines. Los interruptores mecánicos lineales personalizados silenciosos y el recorrido más suave de las teclas hacen que cada pulsación sea fácil y rápida de registrar. Es fácil de personalizar o actualizar según tus preferencias, sin necesidad de investigar en foros.&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"category"</p>: "Teclados",<br/>
+                                <p className="text-white">&quot;category&quot;</p>: &quot;Teclados&quot;,<br/>
                             </div>
                             <div className="flex">
-                                <p className="text-white">"__v"</p>: 0<br/>
+                                <p className="text-white">&quot;__v&quot;</p>: 0<br/>
                             </div>
                         </p>
-                        <p>{'}'}</p>
-
-
+                    <p>{'}'}</p>
                 </code>
             </section>}
             
