@@ -63,74 +63,74 @@ export default function GetProductByName (){
                                 <p className="text-slate-950 font-bold">{'{'}</p>
                                         <ul className="ml-10">
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"id"</p>
+                                                <p className="font-bold text-green-500">&quot;id&quot;</p>
                                                 <p className="font-bold text-white">:</p>
                                                 <p className="font-bold text-yellow-500">1,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"name"</p>
+                                                <p className="font-bold text-green-500">&quot;name&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"K631 PRO WT 65%",</p>
+                                                <p className="font-bold text-yellow-500">&quot;K631 PRO WT 65%&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"price"</p>
+                                                <p className="font-bold text-green-500">&quot;price&quot;</p>
                                                 <p className="font-bold text-white">:</p>
                                                 <p className="font-bold text-yellow-500">100,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"stock"</p>
+                                                <p className="font-bold text-green-500">&quot;stock&quot;</p>
                                                 <p className="font-bold text-white">:</p>
                                                 <p className="font-bold text-yellow-500">2,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"inCart"</p>
+                                                <p className="font-bold text-green-500">&quot;inCart&quot;</p>
                                                 <p className="font-bold text-white">:</p>
                                                 <p className="font-bold text-yellow-500">false,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"imageCard"</p>
+                                                <p className="font-bold text-green-500">&quot;imageCard&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"imageDetail"</p>
+                                                <p className="font-bold text-green-500">&quot;imageDetail&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"imageDetail1"</p>
+                                                <p className="font-bold text-green-500">&quot;imageDetail1&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"imageDetail2"</p>
+                                                <p className="font-bold text-green-500">&quot;imageDetail2&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"brand"</p>
+                                                <p className="font-bold text-green-500">&quot;brand&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"x brand",</p>
+                                                <p className="font-bold text-yellow-500">&quot;x brand&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"brandLogo"</p>
+                                                <p className="font-bold text-green-500">&quot;brandLogo&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"color"</p>
+                                                <p className="font-bold text-green-500">&quot;color&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"black",</p>
+                                                <p className="font-bold text-yellow-500">&quot;black&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"description"</p>
+                                                <p className="font-bold text-green-500">&quot;description&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"....",</p>
+                                                <p className="font-bold text-yellow-500">&quot;....&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
-                                                <p className="font-bold text-green-500">"category"</p>
+                                                <p className="font-bold text-green-500">&quot;category&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"keyboards",</p>
+                                                <p className="font-bold text-yellow-500">&quot;keyboards&quot;,</p>
                                             </li>
                                         </ul>
                                 <p className="text-slate-950 font-bold">{'}'}</p>
