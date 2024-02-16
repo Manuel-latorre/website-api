@@ -97,7 +97,7 @@ export default function GetAllProducts (){
                                             <li className="flex items-center">
                                                 <p className="font-bold text-green-500">&quot;imageCard&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
                                                 <p className="font-bold text-green-500">&quot;imageDetail&quot;</p>

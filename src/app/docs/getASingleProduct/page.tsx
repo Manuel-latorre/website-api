@@ -100,7 +100,7 @@ export default function GetASingleProduct (){
                                             <li className="flex items-center">
                                                 <p className="font-bold text-green-500">&quot;imageDetail1&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-yellow-500">"url",</p>
+                                                <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
                                             </li>
                                             <li className="flex items-center">
                                                 <p className="font-bold text-green-500">&quot;imageDetail2&quot;</p>
