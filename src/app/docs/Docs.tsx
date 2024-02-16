@@ -1,6 +1,7 @@
-import GetASingleProduct from "./getASingleProduct/page";
-import GetAllProducts from "./getAllProducts/page";
-import GetProductByName from "./getProductByName/page";
+import GetCartProducts from "./cart/getCartProducts/page";
+import GetASingleProduct from "./products/getASingleProduct/page";
+import GetAllProducts from "./products/getAllProducts/page";
+import GetProductByName from "./products/getProductByName/page";
 
 export default function Docs(){
     return(
@@ -8,6 +9,7 @@ export default function Docs(){
             <GetAllProducts/>
             <GetASingleProduct/>
             <GetProductByName/>
+            <GetCartProducts/>
         </main>
     )
 }
