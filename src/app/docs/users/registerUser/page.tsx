@@ -3,7 +3,7 @@
 import { Button, Tooltip } from "@nextui-org/react";
 import { useState } from "react";
 
-export default function DeleteProduct (){
+export default function RegisterUser (){
     const [copied, setCopied] = useState(false);
     const [showOutput, setShowOutput] = useState(false);
 
@@ -13,7 +13,7 @@ export default function DeleteProduct (){
 
 
     function copyToClipboard() {
-        const code = document.getElementById('codeDelete');
+        const code = document.getElementById('codeRegisterUser');
         if (code) {
             const text = code.textContent;
             if (text) { // Verifica si text no es null ni undefined
@@ -31,9 +31,9 @@ export default function DeleteProduct (){
     }
 
     return(
-        <div id="deleteProduct">
+        <div id="registerUser">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Delete product from cart</p>
+                <p className="text-xl text-slate-300">Register user</p>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >
@@ -43,12 +43,15 @@ export default function DeleteProduct (){
                         </Tooltip>
                     </div>
                 <section className="bg-slate-300 p-5 rounded-md mt-5 flex justify-between items-center max-md:p-3 min-w-[320px]">
-                <code id="codeDelete">
-                        <p>fetch(&#39;https://api-gaming.vercel.app/products-cart/productId&#39;, {'{'} <br/></p>
-                            method: &quot;DELETE&quot;,<br/>
+                    <code id="codeRegisterUser">
+                        <p>fetch(&#39;https://api-gaming.vercel.app/register&#39;, {'{'} <br/></p>
+                            method: &quot;POST&quot;,<br/>
                             body: JSON.stringify(<br/>
                                 <p className="ml-7">{'{'}</p>
-                                    <p className="ml-12">id: productId</p>
+                                    <p className="ml-12">fullname: &quot;Random User&quot;,</p>
+                                    <p className="ml-12">email:&quot;random01@gmail.com&quot;,</p>
+                                    <p className="ml-12">password: &quot;random01&quot;</p>    
+                                <p className="ml-7">{'}'}</p>
                             <p className="ml-5">)</p>
                            <p>{'}'})</p>
                         <p>.then(res=&gt;res.json())</p>
@@ -79,10 +82,20 @@ export default function DeleteProduct (){
                                 <p className="text-slate-950 font-bold">{'{'}</p>
                                         <ul className="ml-10">
                                             <li className="flex items-center">
-                                                <p className="font-bold text-emerald-400">&quot;message&quot;</p>
+                                                <p className="font-bold text-emerald-400">&quot;id&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-cyan-400">"Product was removed from cart",</p>
-                                            </li>                                           
+                                                <p className="font-bold text-cyan-400">&quot;user id...&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-400">&quot;fullname&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-cyan-400">&quot;Random User&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-400">&quot;email&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-cyan-400">&quot;random01@gmail.com&quot;,</p>
+                                            </li>
                                         </ul>
                                 <p className="text-slate-950 font-bold">{'}'}</p>
                             </code>

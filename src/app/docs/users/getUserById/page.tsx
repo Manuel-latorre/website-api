@@ -3,7 +3,7 @@
 import { Button, Tooltip } from "@nextui-org/react";
 import { useState } from "react";
 
-export default function DeleteProduct (){
+export default function GetUserById (){
     const [copied, setCopied] = useState(false);
     const [showOutput, setShowOutput] = useState(false);
 
@@ -13,7 +13,7 @@ export default function DeleteProduct (){
 
 
     function copyToClipboard() {
-        const code = document.getElementById('codeDelete');
+        const code = document.getElementById('codeUserById');
         if (code) {
             const text = code.textContent;
             if (text) { // Verifica si text no es null ni undefined
@@ -31,9 +31,9 @@ export default function DeleteProduct (){
     }
 
     return(
-        <div id="deleteProduct">
+        <div id="getUserById">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Delete product from cart</p>
+                <p className="text-xl text-slate-300">Get user by id</p>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >
@@ -43,16 +43,10 @@ export default function DeleteProduct (){
                         </Tooltip>
                     </div>
                 <section className="bg-slate-300 p-5 rounded-md mt-5 flex justify-between items-center max-md:p-3 min-w-[320px]">
-                <code id="codeDelete">
-                        <p>fetch(&#39;https://api-gaming.vercel.app/products-cart/productId&#39;, {'{'} <br/></p>
-                            method: &quot;DELETE&quot;,<br/>
-                            body: JSON.stringify(<br/>
-                                <p className="ml-7">{'{'}</p>
-                                    <p className="ml-12">id: productId</p>
-                            <p className="ml-5">)</p>
-                           <p>{'}'})</p>
-                        <p>.then(res=&gt;res.json())</p>
-                        <p>.then(json=&gt;console.log(json))</p>
+                    <code id="codeUserById">
+                        fetch(&#39;https://api-gaming.vercel.app/user/userId&#39;) <br />
+                        .then(res=&gt;res.json()) <br />
+                        .then(json=&gt;console.log(json))
                     </code>
                     <div className="max-md:hidden">
                         <Tooltip showArrow={true} content="Copy to clipboard">
@@ -62,35 +56,53 @@ export default function DeleteProduct (){
                         </Tooltip>
                     </div>
                 </section>
-                <div className="max-sm:hidden">
-                    {!showOutput && (
-                      <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
-                        Show Output
-                      </Button>
-                    )}
-                    {showOutput && (
-                      <div>
+                    <div className="max-sm:hidden">
+                        {!showOutput && (
                         <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
-                          Hide Output
+                            Show Output
                         </Button>
-                        <p className="text-slate-400 text-2xl mt-5 mb-5">Example</p>
-                        <section className="bg-slate-700 p-7 rounded-md">
-                        <code>
-                                <p className="text-slate-950 font-bold">{'{'}</p>
-                                        <ul className="ml-10">
+                        )}
+                        {showOutput && (
+                        <div>
+                            <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
+                                Hide Output
+                            </Button>
+                            <p className="text-slate-400 text-2xl mt-5 mb-5">Example</p>
+                            <section className="bg-slate-700 p-7 rounded-md">
+                                <code>
+                                        <p className="ml-5 font-bold text-green-400">{'{'}</p>
+                                        <ul className="ml-14">
                                             <li className="flex items-center">
-                                                <p className="font-bold text-emerald-400">&quot;message&quot;</p>
+                                                <p className="font-bold text-emerald-200">&quot;id&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-cyan-400">"Product was removed from cart",</p>
-                                            </li>                                           
+                                                <p className="font-bold text-teal-300">&quot;65ce038f2ca31ca3abe76813&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;email&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">&quot;jhondoe1@gmail.com&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;fullname&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">&quot;Jhon Doe&quot;,</p>
+                                            </li>                     
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;cart&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">{'[]'},</p>
+                                            </li>
+                                            
                                         </ul>
-                                <p className="text-slate-950 font-bold">{'}'}</p>
-                            </code>
-                        </section>
-                      </div>
-                    )}
-                </div>
+                                        <p className="ml-5 font-bold text-green-400">{'}'}</p>
+                                </code>
+                            </section>
+                        </div>
+                        )}
+                    </div>
             </div>
         </div>
     )
 }
+
+

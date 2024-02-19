@@ -102,7 +102,7 @@ export default function DecreaseQuantity (){
                                             <li className="flex items-center">
                                                 <p className="font-bold text-emerald-400">&quot;amount&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-cyan-400">2,</p>
+                                                <p className="font-bold text-cyan-400">1,</p>
                                             </li>
                                         </ul>
                                 <p className="text-slate-950 font-bold">{'}'}</p>

@@ -3,7 +3,7 @@
 import { Button, Tooltip } from "@nextui-org/react";
 import { useState } from "react";
 
-export default function DeleteProduct (){
+export default function GetAllUsers (){
     const [copied, setCopied] = useState(false);
     const [showOutput, setShowOutput] = useState(false);
 
@@ -13,7 +13,7 @@ export default function DeleteProduct (){
 
 
     function copyToClipboard() {
-        const code = document.getElementById('codeDelete');
+        const code = document.getElementById('codeAllUsers');
         if (code) {
             const text = code.textContent;
             if (text) { // Verifica si text no es null ni undefined
@@ -31,9 +31,14 @@ export default function DeleteProduct (){
     }
 
     return(
-        <div id="deleteProduct">
+        <div id="getAllUsers">
+            <div className="flex items-center gap-2 mt-20">
+                <svg width={25} height={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#cbd5e1" stroke-width="1.9440000000000002" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <p className="text-slate-300 text-2xl font-semibold">Users</p>
+            </div>
+
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Delete product from cart</p>
+                <p className="text-xl text-slate-300">Get all users</p>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >
@@ -43,16 +48,10 @@ export default function DeleteProduct (){
                         </Tooltip>
                     </div>
                 <section className="bg-slate-300 p-5 rounded-md mt-5 flex justify-between items-center max-md:p-3 min-w-[320px]">
-                <code id="codeDelete">
-                        <p>fetch(&#39;https://api-gaming.vercel.app/products-cart/productId&#39;, {'{'} <br/></p>
-                            method: &quot;DELETE&quot;,<br/>
-                            body: JSON.stringify(<br/>
-                                <p className="ml-7">{'{'}</p>
-                                    <p className="ml-12">id: productId</p>
-                            <p className="ml-5">)</p>
-                           <p>{'}'})</p>
-                        <p>.then(res=&gt;res.json())</p>
-                        <p>.then(json=&gt;console.log(json))</p>
+                    <code id="codeAllUsers">
+                        fetch(&#39;https://api-gaming.vercel.app/users&#39;) <br />
+                        .then(res=&gt;res.json()) <br />
+                        .then(json=&gt;console.log(json))
                     </code>
                     <div className="max-md:hidden">
                         <Tooltip showArrow={true} content="Copy to clipboard">
@@ -62,35 +61,56 @@ export default function DeleteProduct (){
                         </Tooltip>
                     </div>
                 </section>
-                <div className="max-sm:hidden">
-                    {!showOutput && (
-                      <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
-                        Show Output
-                      </Button>
-                    )}
-                    {showOutput && (
-                      <div>
+                    <div className="max-sm:hidden">
+                        {!showOutput && (
                         <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
-                          Hide Output
+                            Show Output
                         </Button>
-                        <p className="text-slate-400 text-2xl mt-5 mb-5">Example</p>
-                        <section className="bg-slate-700 p-7 rounded-md">
-                        <code>
-                                <p className="text-slate-950 font-bold">{'{'}</p>
-                                        <ul className="ml-10">
+                        )}
+                        {showOutput && (
+                        <div>
+                            <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
+                                Hide Output
+                            </Button>
+                            <p className="text-slate-400 text-2xl mt-5 mb-5">Example</p>
+                            <section className="bg-slate-700 p-7 rounded-md">
+                                <code>
+                                    <p className="ml-5 font-bold text-cyan-400">{'['}</p>
+                                        <p className="ml-10 font-bold text-green-400">{'{'}</p>
+                                        <ul className="ml-14">
                                             <li className="flex items-center">
-                                                <p className="font-bold text-emerald-400">&quot;message&quot;</p>
+                                                <p className="font-bold text-emerald-200">&quot;id&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-cyan-400">"Product was removed from cart",</p>
-                                            </li>                                           
+                                                <p className="font-bold text-teal-300">&quot;65ce038f2ca31ca3abe76813&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;email&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">&quot;jhondoe1@gmail.com&quot;,</p>
+                                            </li>
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;fullname&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">&quot;Jhon Doe&quot;,</p>
+                                            </li>                     
+                                            <li className="flex items-center">
+                                                <p className="font-bold text-emerald-200">&quot;cart&quot;</p>
+                                                <p className="font-bold text-white">:</p>
+                                                <p className="font-bold text-teal-300">{'[]'},</p>
+                                            </li>
+                                            
                                         </ul>
-                                <p className="text-slate-950 font-bold">{'}'}</p>
-                            </code>
-                        </section>
-                      </div>
-                    )}
-                </div>
+                                        <p className="ml-10 font-bold text-green-400">{'},'}</p>
+                                        <p className="text-slate-500 ml-10">{'/* 2 more... */'}</p>
+                                        <p className="ml-5 font-bold text-cyan-400">{']'}</p>    
+                                </code>
+                            </section>
+                        </div>
+                        )}
+                    </div>
             </div>
         </div>
     )
 }
+
+

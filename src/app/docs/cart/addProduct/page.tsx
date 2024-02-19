@@ -50,7 +50,8 @@ export default function AddProduct (){
                                 <p className="ml-7">{'{'}</p>
                                     <p className="ml-12">name: &quot;M711 COBRA Gaming&quot;,</p>
                                     <p className="ml-12">price: 15.988,</p>
-                                    <p className="ml-12">imageCard: &quot;https://www.redragonzone.com/cdn/shop/products/1_360x.png?v=1557024034&quot;</p>    
+                                    <p className="ml-12 min-w-unit-md:hidden">imageCard: &quot;https://www.redragonzone.com<br/>/cdn/shop/products/1_360x.png?v=1557024034&quot;</p>    
+                                    <p className="ml-12 max-sm:hidden">imageCard: &quot;https://www.redragonzone.com/cdn/shop/products/1_360x.png?v=1557024034&quot;</p>    
                                 <p className="ml-7">{'}'}</p>
                             <p className="ml-5">)</p>
                            <p>{'}'})</p>
