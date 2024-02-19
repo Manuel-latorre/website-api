@@ -33,7 +33,10 @@ export default function IncreaseQuantity (){
     return(
         <div id="increaseQuantity">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Increase product quantity</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Increase product quantity</p>
+                    <Button variant="flat" color="secondary" size="sm">PUT</Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >

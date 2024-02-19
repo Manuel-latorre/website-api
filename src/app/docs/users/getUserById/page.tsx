@@ -33,7 +33,10 @@ export default function GetUserById (){
     return(
         <div id="getUserById">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Get user by id</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Get user by id</p>
+                    <Button variant="flat" color="primary" size="sm">GET</Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >

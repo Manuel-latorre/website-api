@@ -33,7 +33,10 @@ export default function RegisterUser (){
     return(
         <div id="registerUser">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Register user</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Register user</p>
+                    <Button variant="flat" color="success" size="sm">POST</Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >

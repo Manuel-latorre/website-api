@@ -4,45 +4,61 @@ import Link from "next/link";
 
 export default function Routes(){
     return(
-        <section className="w-full lg:w-3/5 mx-auto mt-20">
+        <section className="w-full lg:w-3/5 mx-auto mt-20 p-5">
             <p className="text-2xl text-slate-400 mb-5">Routes of products</p>
-            <ul className="w-full bg-slate-300 p-5 rounded-lg flex flex-col gap-5">
-                <li className="flex items-center justify-between">
+            <ul className="w-full bg-slate-300 p-2 rounded-lg flex flex-col gap-5">
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"} target="_blank">/products</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products"} target="_blank">/products</Link>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"}target="_blank">/products/6542700933c25546cfde098e</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/6542700933c25546cfde098e"}target="_blank">/products/productId</Link>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
                     <p className="font-bold text-blue-600">GET</p>
-                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/search?name=K631%20PRO%20WT%2065"} target="_blank">/products/search?name=K631%20PRO%20WT%2065</Link>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products/search?name=K631%20PRO%20WT%2065"} target="_blank">/products/search?name=name</Link>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
                     <p className="font-bold text-blue-600">GET</p>
                     <Link className="text-blue-600" href={"https://api-gaming.vercel.app/products-cart"} target="_blank">/products/cart</Link>
                 </li>
-                <li className="flex items-center justify-between">
-                    <p className="font-bold text-purple-700">POST</p>
-                    <p className="text-purple-700">/products-cart</p>
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
+                    <p className="font-bold text-blue-600">GET</p>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/users"} target="_blank">/users</Link>
                 </li>
-                <li className="flex items-center justify-between">
-                    <p className="font-bold text-purple-700">POST</p>
-                    <p className="text-purple-700">/register</p>
+                <li className="flex items-center justify-between bg-blue-700 bg-opacity-20 p-2 rounded-lg">
+                    <p className="font-bold text-blue-600">GET</p>
+                    <Link className="text-blue-600" href={"https://api-gaming.vercel.app/user/65d3b01b92478bc91a283b0f"} target="_blank">/user/:userId</Link>
                 </li>
-                <li className="flex items-center justify-between">
-                    <p className="font-bold text-green-900">PUT</p>
-                    <p className="text-green-900">/products-cart/:id</p>
+                <li className="flex items-center justify-between bg-green-400 bg-opacity-20 p-2 rounded-lg">
+                    <p className="font-bold text-green-700">POST</p>
+                    <p className="text-green-700">/products-cart</p>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between bg-green-400 bg-opacity-20 p-2 rounded-lg">
+                    <p className="font-bold text-green-700">POST</p>
+                    <p className="text-green-700">/register</p>
+                </li>
+                <li className="flex items-center justify-between bg-green-400 bg-opacity-20 p-2 rounded-lg">
+                    <p className="font-bold text-green-700">POST</p>
+                    <p className="text-green-700">/login</p>
+                </li>
+                <li className="flex items-center justify-between bg-teal-400 bg-opacity-40 p-2 rounded-lg">
+                    <p className="font-bold text-teal-700">PUT</p>
+                    <p className="text-teal-700">productId?query=add</p>
+                </li>
+                <li className="flex items-center justify-between bg-teal-400 bg-opacity-40 p-2 rounded-lg">
+                    <p className="font-bold text-teal-700">PUT</p>
+                    <p className="text-teal-700">productId?query=del</p>
+                </li>
+                <li className="flex items-center justify-between bg-red-500 bg-opacity-20 p-2 rounded-lg">
                     <p className="text-red-600 font-bold">DELETE</p>
                     <p className="text-red-600">/products-cart/:id</p>
                 </li>
             </ul>
             <Link href={"/docs"} target="_blank">
                 <Button className="mt-5" color="secondary">
-                    View details on Docs
+                    View details in Docs
                 </Button>
             </Link>
 

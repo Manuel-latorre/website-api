@@ -5,11 +5,11 @@ import { useState } from "react";
 
 export default function ExampleCode() {
     const [copied, setCopied] = useState(false);
-    const [showCode, setShowCode] = useState(false);
+    const [showOutput, setShowOutput] = useState(false);
 
-    const handleShowcode = () => {
-        setShowCode(true);
-    }
+    const handleToggleOutput = () => {
+        setShowOutput(!showOutput);
+      };
    
 
     function copyToClipboard() {
@@ -32,7 +32,7 @@ export default function ExampleCode() {
     
 
     return (
-        <div className="w-full lg:w-3/5 mx-auto mt-20">
+        <div className="w-full lg:w-3/5 mx-auto mt-20 p-5">
             <p className="text-slate-400 text-2xl">Example Code</p>
             <section className="bg-slate-300 p-5 rounded-md mt-5 flex justify-between items-center">
                 <code id="code">
@@ -47,64 +47,104 @@ export default function ExampleCode() {
                 </Tooltip>
             </section>
 
-            <Button onClick={handleShowcode} className="mt-7" color="secondary">
-                Try it !
-            </Button>
-
-            { showCode && 
-            <section className="bg-slate-900 p-3 rounded-md mt-5 flex justify-between items-center" >
-                <code>
-                    <p className="text-pink-600">{'{'}</p>
-                        <p className="ml-10">
-                            <div className="flex">
-                                <p className="text-green-500">&quot;_id&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;6542700933c25546cfde098e&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;name&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;K631 PRO WT 65%&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;price&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">34.899,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;stock&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">19,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;inCart&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">false,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;imageCard&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_360x.png?v=1681801748&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;imageDetail&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;https://www.redragonzone.com/cdn/shop/products/White_Mint65_Wirelesskeyboard_1_450x450.png?v=1681801748&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;imageDetail1&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_1_450x450.jpg?v=1681801765&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;imageDetail2&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;https://www.redragonzone.com/cdn/shop/products/RedragonK631PROWhite_mint65_3-ModeWirelessRGBGamingKeyboard_2_450x450.jpg?v=1681801765&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;brand&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;Redragon&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;brandLogo&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;https://www.redragonzone.com/cdn/shop/files/new-redragon-logo_180x.png?v=1613704782&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;color&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;blanco&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;description&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;La innovación transformadora con el teclado Redragon de intercambio en caliente con un 99.8%+ de compatibilidad con interruptores está disponible ahora. El diseño exclusivo de la estructura del socket hace que el montaje de los interruptores sea más sencillo y con menos oscilación. Conexión de 3 Modos - Equipado con la innovadora tecnología de conexión de tres modos de Redragon, cable USB-C, modos inalámbricos BT 3.0/5.0 y 2.4Ghz, lo que eleva la experiencia del usuario a otro nivel en todos los campos. Modo de Intercambio en Caliente y Interruptores Personalizados - Compatible con la mayoría de los tipos de interruptores en el mercado, ya sea de 3 pines o de 5 pines. Los interruptores mecánicos lineales personalizados silenciosos y el recorrido más suave de las teclas hacen que cada pulsación sea fácil y rápida de registrar. Es fácil de personalizar o actualizar según tus preferencias, sin necesidad de investigar en foros.&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;category&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">&quot;Teclados&quot;,</p><br/>
-                            </div>
-                            <div className="flex">
-                                <p className="text-green-500">&quot;__v&quot;</p> <p className="text-white">:</p> <p className="text-lime-200">0</p><br/>
-                            </div>
-                        </p>
-                    <p className="text-pink-600">{'}'}</p>
-                </code>
-            </section>}
+            <div className="max-sm:hidden">
+                        {!showOutput && (
+                        <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
+                            Try it !
+                        </Button>
+                        )}
+                        {showOutput && (
+                        <div>
+                            <Button onClick={handleToggleOutput} className="mt-7" color="secondary">
+                                Hide Code
+                            </Button>
+                            <p className="text-slate-400 text-2xl mt-5 mb-5">Example</p>
+                            <section className="bg-slate-700 p-7 rounded-md">
+                                <code>
+                                    <p className="text-slate-950 font-bold">{'{'}</p>
+                                        <p className="ml-5 text-pink-600 font-bold">products: <p className="ml-10 font-bold text-purple-600">{'['}</p>
+                                            <p className="ml-20 font-bold text-blue-700">{'{'}</p>
+                                            <ul className="ml-24">
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;id&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">1,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;name&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;Product 1&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;price&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">100,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;stock&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">2,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;inCart&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">false,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;imageCard&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;imageDetail&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;imageDetail1&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;imageDetail2&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;brand&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;x brand&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;brandLogo&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;url&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;color&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;black&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;description&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;....&quot;,</p>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <p className="font-bold text-green-500">&quot;category&quot;</p>
+                                                    <p className="font-bold text-white">:</p>
+                                                    <p className="font-bold text-yellow-500">&quot;keyboards&quot;,</p>
+                                                </li>
+                                            </ul>
+                                            <p className="ml-20 font-bold text-blue-700">{'},'}</p>
+                                            <p className="text-slate-500 ml-20">{'/* 96 more... */'}</p>
+                                        <p className="ml-10 font-bold text-purple-600">{']'}</p></p>
+                                    <p className="text-slate-950 font-bold">{'}'}</p>
+                                </code>
+                            </section>
+                        </div>
+                        )}
+                    </div>
             
         </div>
     );

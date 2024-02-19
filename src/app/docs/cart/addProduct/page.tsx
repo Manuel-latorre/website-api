@@ -33,7 +33,10 @@ export default function AddProduct (){
     return(
         <div id="addProduct">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Add products to cart</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Add products to cart</p>
+                    <Button variant="flat" color="success" size="sm">POST</Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >
@@ -50,7 +53,7 @@ export default function AddProduct (){
                                 <p className="ml-7">{'{'}</p>
                                     <p className="ml-12">name: &quot;M711 COBRA Gaming&quot;,</p>
                                     <p className="ml-12">price: 15.988,</p>
-                                    <p className="ml-12 min-w-unit-md:hidden">imageCard: &quot;https://www.redragonzone.com<br/>/cdn/shop/products/1_360x.png?v=1557024034&quot;</p>    
+                                    <p className="ml-12 min-w-unit-md:hidden">imageCard: &quot;https://www.redragonzone<br/>.com<br/>/cdn/shop/products/<br/>1_360x.png?v=1557024034&quot;</p>    
                                     <p className="ml-12 max-sm:hidden">imageCard: &quot;https://www.redragonzone.com/cdn/shop/products/1_360x.png?v=1557024034&quot;</p>    
                                 <p className="ml-7">{'}'}</p>
                             <p className="ml-5">)</p>

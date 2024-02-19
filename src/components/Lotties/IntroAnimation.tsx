@@ -5,6 +5,7 @@ import introanimation from './introanimation1.json'
 
 export default function AnimationIntro(){
     return(
-        <Lottie animationData={introanimation} loop={true} style={{width:400, height:400}}/>
+        <Lottie id="lottie" animationData={introanimation} loop={true} style={{width:400, height:400, margin:'auto'}} />
     )
 }
+

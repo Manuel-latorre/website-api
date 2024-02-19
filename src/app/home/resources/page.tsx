@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Resources(){
     return(
-        <div className="w-full lg:w-3/5 mx-auto mt-20"> 
+        <div className="w-full lg:w-3/5 mx-auto mt-20 p-5"> 
             <p className="text-2xl text-slate-400">Resources</p>
             <p className="mt-3 text-slate-400 mb-4">There are 3 main resources need in shopping prototypes</p>
             <ul className="w-full lg:w-3/6 bg-slate-300 p-5 rounded-lg flex flex-col gap-5">

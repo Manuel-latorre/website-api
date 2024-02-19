@@ -33,7 +33,10 @@ export default function DeleteProduct (){
     return(
         <div id="deleteProduct">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Delete product from cart</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Delete product from cart</p>
+                    <Button variant="flat" color="danger" size="sm">DELETE</Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >

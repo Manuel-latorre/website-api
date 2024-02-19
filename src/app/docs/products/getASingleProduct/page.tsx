@@ -33,7 +33,12 @@ export default function GetASingleProduct (){
     return(
         <div id="getASingleProduct">
             <div className="mt-10">
-                <p className="text-xl text-slate-300">Get a single product by ID</p>
+                <div className="flex items-center justify-between">
+                    <p className="text-xl text-slate-300">Get a single product by ID</p>
+                    <Button size="sm" variant="flat" color="primary">
+                        GET
+                    </Button>
+                </div>
                     <div className="md:hidden mt-5">
                         <Tooltip showArrow={true} content="Copy to clipboard">
                             <button onClick={copyToClipboard} className="bg-gray-600 rounded-full p-1 flex items-center gap-1" >

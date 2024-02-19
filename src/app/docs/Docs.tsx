@@ -13,7 +13,7 @@ import RegisterUser from "./users/registerUser/page";
 
 export default function Docs(){
     return(
-        <main className="w-3/5 max-lg:w-full max-lg:p-10 max-lg:justify-center mx-auto items-center">
+        <main className="w-3/5 max-lg:w-full max-lg:p-5 max-lg:justify-center mx-auto items-center">
             <GetAllProducts/>
             <GetASingleProduct/>
             <GetProductByName/>
