@@ -81,7 +81,7 @@ export default function DeleteProduct (){
                                             <li className="flex items-center">
                                                 <p className="font-bold text-emerald-400">&quot;message&quot;</p>
                                                 <p className="font-bold text-white">:</p>
-                                                <p className="font-bold text-cyan-400">"Product was removed from cart",</p>
+                                                <p className="font-bold text-cyan-400">&quot;Product was removed from cart&quot;,</p>
                                             </li>                                           
                                         </ul>
                                 <p className="text-slate-950 font-bold">{'}'}</p>
