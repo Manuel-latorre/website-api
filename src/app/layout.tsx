@@ -5,6 +5,7 @@ import "./globals.css";
 import Provider from "./Provider";
 import Navbar from "./navbar/page";
 import Footer from "./footer/page";
+import Navmobile from "./navmobile/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({subsets:["latin"]});
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={outfit.className}>
         <Provider>
           <Navbar/>
+          <Navmobile/>
           {children}
           <Footer/>
         </Provider>

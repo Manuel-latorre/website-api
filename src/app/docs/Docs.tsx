@@ -1,4 +1,7 @@
+import AddProduct from "./cart/addProduct/page";
+import DecreaseQuantity from "./cart/decreaseQuantity/page";
 import GetCartProducts from "./cart/getCartProducts/page";
+import IncreaseQuantity from "./cart/increaseQuantity/page";
 import GetASingleProduct from "./products/getASingleProduct/page";
 import GetAllProducts from "./products/getAllProducts/page";
 import GetProductByName from "./products/getProductByName/page";
@@ -10,6 +13,9 @@ export default function Docs(){
             <GetASingleProduct/>
             <GetProductByName/>
             <GetCartProducts/>
+            <AddProduct/>
+            <IncreaseQuantity/>
+            <DecreaseQuantity/>
         </main>
     )
 }

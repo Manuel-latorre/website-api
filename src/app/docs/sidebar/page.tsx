@@ -28,10 +28,13 @@ export default function Sidebar(){
                                     <Link href={"#getCartProducts"} className="font-medium text-slate-700 hover:text-blue-500">Get products in cart</Link>
                                 </li>
                                 <li>
-                                    <Link href={"#"} className="font-medium text-slate-700 hover:text-blue-500">Add product to cart</Link>
+                                    <Link href={"#addProduct"} className="font-medium text-slate-700 hover:text-blue-500">Add product to cart</Link>
                                 </li>
                                 <li>
-                                    <Link href={"#"} className="font-medium text-slate-700 hover:text-blue-500">Update product quantity</Link>
+                                    <Link href={"#increaseQuantity"} className="font-medium text-slate-700 hover:text-blue-500">Increase product quantity</Link>
+                                </li>
+                                <li>
+                                    <Link href={"#decreaseQuantity"} className="font-medium text-slate-700 hover:text-blue-500">Decrease product quantity</Link>
                                 </li>
                                 <li>
                                     <Link href={"#"} className="font-medium text-slate-700 hover:text-blue-500">Delete product from cart</Link>
