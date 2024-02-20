@@ -1,7 +1,7 @@
 'use client'
 
 import Lottie from "lottie-react"
-import introanimation from './introanimation1.json'
+import introanimation from './intro1.json'
 
 export default function MobileIntro(){
     return(

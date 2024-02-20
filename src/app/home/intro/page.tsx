@@ -5,16 +5,16 @@ import Link from "next/link";
 
 export default function IntroHome() {
     return(
-        <main className="w-full lg:w-3/5 mx-auto mt-10">
-            <section className="flex flex-col lg:flex-row items-center justify-between p-5 lg:p-10 gap-10">
+        <main className="w-full lg:w-3/5 mx-auto mt-10 max-lg:w-11/12 bg-slate-800 rounded-xl pb-5 ">
+            <section className="flex flex-col lg:flex-row items-center justify-between p-5 lg:p-10 gap-20">
                 <div className="text-center">
                     <h3 className="font-semibold text-slate-300 text-4xl lg:text-6xl antialiased">Tech Shop API</h3>
                     <p className="mt-4 lg:mt-7 text-slate-400">Simulated API for gaming-related merchandise, encompassing items like headsets, consoles, keyboards, and more.</p>
                     
-                        <div className="max-lg:justify-center lg:hidden xl:hidden 2xl:hidden">
+                        <div className="max-xl:justify-center xl:hidden 2xl:hidden mt-7">
                             <MobileIntro/>
                         </div>
-                        <div className="mt-10 flex gap-5 justify-center"> 
+                        <div className="mt-10 flex gap-5 justify-center max-sm:mt-14"> 
                             <Link href={"https://github.com/Manuel-latorre/api-ecommerce"} target="_blank">
                                 <Button color="secondary" variant="shadow">
                                     View on Github 
@@ -29,7 +29,7 @@ export default function IntroHome() {
                             </Link> 
                         </div>
                 </div>
-                <div className="mt-5 lg:mt-0 max-lg:hidden">
+                <div className="mt-5 lg:mt-0 max-xl:hidden">
                     <AnimationIntro/>
                 </div>
             </section>
