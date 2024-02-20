@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Outfit, Space_Mono } from "next/font/google";
+import {Outfit } from "next/font/google";
 
 import "./globals.css";
 import Provider from "./Provider";
 import Navbar from "./navbar/page";
 import Footer from "./footer/page";
-import Navmobile from "./navmobile/page";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
 const outfit = Outfit({subsets:["latin"]});
-const monospace = Space_Mono({weight:["400"], subsets:["latin"]});
+
 
 export const metadata: Metadata = {
-  title: "API",
+  title: "API Tech Shop",
 };
 
 export default function RootLayout({
@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className={outfit.className}>
         <Provider>
           <Navbar/>
-          <Navmobile/>
           {children}
           <Footer/>
         </Provider>

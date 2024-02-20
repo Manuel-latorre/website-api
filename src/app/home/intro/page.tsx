@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function IntroHome() {
     return(
-        <main className="w-full lg:w-3/5 mx-auto mt-10 max-lg:w-11/12 bg-slate-800 rounded-xl pb-5 ">
+        <main id="intro" className="w-full lg:w-3/5 mx-auto mt-10 max-lg:w-11/12 rounded-xl pb-5 ">
             <section className="flex flex-col lg:flex-row items-center justify-between p-5 lg:p-10 gap-20">
                 <div className="text-center">
                     <h3 className="font-semibold text-slate-300 text-4xl lg:text-6xl antialiased">Tech Shop API</h3>
