@@ -95,7 +95,7 @@ export default function Nav () {
                         </li>
                     </ul>
                 </section>
-                <section className="mt-10 flex flex-col gap-5 pb-10">
+                <section className="mt-10 flex flex-col gap-5 mb-10 pb-20">
                     <div className="flex items-center gap-2">
                     <svg width={25} height={25} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="18" cy="18" r="3"></circle> <circle cx="6" cy="6" r="3"></circle> <path d="M13 6h3a2 2 0 012 2v7"></path> <line x1="6" y1="9" x2="6" y2="21"></line> </g></svg>
                         <p className="text-xl text-white">Requests</p>
