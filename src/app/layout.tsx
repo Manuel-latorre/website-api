@@ -12,7 +12,7 @@ const outfit = Outfit({subsets:["latin"]});
 
 
 export const metadata: Metadata = {
-  title: "API Tech Shop",
+  title: "Tech Shop API",
 };
 
 export default function RootLayout({
@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" >
+      <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <body className={outfit.className}>
         <Provider>
           <Navbar/>

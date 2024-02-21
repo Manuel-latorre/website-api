@@ -57,8 +57,8 @@ export default function Routes(){
                 </li>
             </ul>
             <Link href={"/docs"} target="_blank">
-                <Button className="mt-5" color="secondary">
-                    View details in Docs
+                <Button className="mt-5" color="primary">
+                    <p className="text-white">View details in Docs</p>
                 </Button>
             </Link>
 
