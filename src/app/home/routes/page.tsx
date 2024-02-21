@@ -56,12 +56,11 @@ export default function Routes(){
                     <p className="text-red-600">/products-cart/:id</p>
                 </li>
             </ul>
-            <Link href={"/docs"} target="_blank">
+            <Link href={"/docs"}>
                 <Button className="mt-5" color="primary">
                     <p className="text-white">View details in Docs</p>
                 </Button>
             </Link>
-
         </section>
     )
 }
