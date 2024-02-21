@@ -1,7 +1,7 @@
 'use client'
 
-import Link from "next/link";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, DropdownItem, DropdownMenu, Dropdown, DropdownTrigger, Accordion, AccordionItem} from "@nextui-org/react";
+// import Link from "next/link";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, DropdownItem, DropdownMenu, Dropdown, DropdownTrigger, Accordion, AccordionItem, Link} from "@nextui-org/react";
 import { useState } from "react";
 
 
@@ -76,19 +76,19 @@ export default function Nav () {
                     </div>
                     <ul className="flex flex-col ml-3 gap-4">
                         <li>
-                            <Link onClick={() => setIsMenuOpen(false)} href="#getAllProducts" className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2">
+                            <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#getAllProducts"} className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2">
                                 <svg width={22} height={22} viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g fill="none" fill-rule="evenodd" id="页面-1" stroke-width="0.984"> <g id="导航图标" transform="translate(-325.000000, -80.000000)"> <g id="编组" transform="translate(325.000000, 80.000000)"> <polygon fill="#ffffffFFFFFF" fill-opacity="0.01" fill-rule="nonzero" id="路径" points="24 0 0 0 0 24 24 24"></polygon> <polygon id="路径" points="22 7 12 2 2 7 2 17 12 22 22 17" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.984"></polygon> <line id="路径" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.984" x1="2" x2="12" y1="7" y2="12"></line> <line id="路径" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.984" x1="12" x2="12" y1="22" y2="12"></line> <line id="路径" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.984" x1="22" x2="12" y1="7" y2="12"></line> <line id="路径" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.984" x1="17" x2="7" y1="4.5" y2="9.5"></line> </g> </g> </g> </g></svg>
                                 Products
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={() => setIsMenuOpen(false)} href="#getCartProducts" className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2 ">
+                            <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#getCartProducts"} className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2 ">
                             <svg width={22} height={22} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="0.984" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 Cart
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={() => setIsMenuOpen(false)} href="#getAllUsers" className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2">
+                            <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#getAllUsers"} className="text-xl text-slate-300 hover:bg-slate-500 flex items-center gap-2">
                                 <svg width={22} height={22} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#ffffff" stroke-width="0.984" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 Users
                             </Link>
@@ -101,7 +101,7 @@ export default function Nav () {
                         <p className="text-xl text-white">Requests</p>
                     </div>
                     <NavbarItem>
-                        <Accordion isCompact={true} className="w-full p-2" showDivider={false}>
+                        <Accordion isCompact={true} className="w-full p-2 flex flex-col gap-2" showDivider={false}>
                             <AccordionItem key="1" aria-label="GET" title={<p className="font-bold text-blue-600">GET</p>} className="bg-blue-900 px-2 rounded-lg text-blue-500">
                               <ul className="flex flex-col gap-4 pb-2">
                                 <li className="flex items-center justify-between bg-blue-950 p-1 rounded-lg">
@@ -130,14 +130,47 @@ export default function Nav () {
                                 </li>
                               </ul>
                             </AccordionItem>
-                            <AccordionItem key="2" aria-label="POST" title="POST">
-                              Hola
+                            <AccordionItem key="2" aria-label="POST" title={<p className="font-bold text-green-500">POST</p>} className="bg-green-700 px-2 rounded-lg text-green-500">
+                                <ul className="flex flex-col gap-4 pb-2">
+                                    <li className="flex items-center justify-between bg-green-950 p-1 rounded-lg">
+                                        <p>Add product to cart</p>
+                                        <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#addProduct"} className="text-green-500">/products-cart</Link>
+                                    </li>
+                                    <li className="flex items-center justify-between bg-green-950 p-1 rounded-lg">
+                                        <p>Register user</p>
+                                        <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#registerUser"} className="text-green-500">/register</Link>
+                                    </li>
+                                    <li className="flex items-center justify-between bg-green-950 p-1 rounded-lg">
+                                        <p>Login</p>
+                                        <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#loginUser"} className="text-green-500">/login</Link>
+                                    </li>
+                                </ul>
                             </AccordionItem>
-                            <AccordionItem key="3" aria-label="PUT" title="PUT">
-                              Hola
+                            <AccordionItem key="3" aria-label="PUT" title={<p className="font-bold text-emerald-900">PUT</p>} className="bg-emerald-600 px-2 rounded-lg text-emerald-950">
+                                <ul className="flex flex-col gap-4 pb-2">
+                                    <li className="flex items-center justify-between bg-emerald-700 p-1 rounded-lg">
+                                        <div className="flex items-center gap-1">
+                                            <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 12H15" stroke="#022c22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 9L12 15" stroke="#022c22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="#022c22" stroke-width="2"></path> </g></svg>
+                                            <p>Quantity</p>
+                                        </div>
+                                        <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#increaseQuantity"} className="text-emerald-950">/products-cart/id?query=add</Link>
+                                    </li>
+                                    <li className="flex items-center justify-between bg-emerald-700 p-1 rounded-lg">
+                                        <div className="flex items-center gap-1">
+                                            <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 12H15" stroke="#022c22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="#022c22" stroke-width="2"></path> </g></svg>
+                                            <p>Quantity</p>
+                                        </div>
+                                        <Link onClick={() => setIsMenuOpen(false)} href={"/docs/#decreaseQuantity"} className="text-emerald-950">/products-cart/id?query=del</Link>
+                                    </li>
+                                </ul>
                             </AccordionItem>
-                            <AccordionItem key="4" aria-label="DELETE" title="DELETE">
-                              Hola
+                            <AccordionItem key="4" aria-label="DELETE" title={<p className="font-bold text-red-950">PUT</p>} className="bg-red-400 px-2 rounded-lg text-red-950">
+                                <ul className="flex flex-col gap-4 pb-2">
+                                    <li className="flex items-center justify-between bg-red-500 p-1 rounded-lg">
+                                        <p>Delete cart product</p>
+                                        <Link href={"/docs/#deleteProduct"} onClick={() => setIsMenuOpen(false)} className="text-red-950">/products-cart/:id</Link>
+                                    </li>
+                                </ul>
                             </AccordionItem>
                         </Accordion>
                     </NavbarItem>

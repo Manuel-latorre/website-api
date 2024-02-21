@@ -16,7 +16,7 @@ export default function Resources(){
                 </li>
                 <li className="flex items-center justify-between">
                     <Link className="text-blue-500" href={"https://api-gaming.vercel.app/users"} target="_blank">Users</Link>
-                    <p>3 users</p>
+                    <p>4 users</p>
                 </li>
             </ul>
         </div>

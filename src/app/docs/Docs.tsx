@@ -1,3 +1,4 @@
+import ButtonScroll from "./buttonScroll/page";
 import AddProduct from "./cart/addProduct/page";
 import DecreaseQuantity from "./cart/decreaseQuantity/page";
 import DeleteProduct from "./cart/deleteProduct/page";
@@ -26,6 +27,7 @@ export default function Docs(){
             <GetUserById/>
             <RegisterUser/>
             <LoginUser/>
+            <ButtonScroll/>
         </main>
 
     )

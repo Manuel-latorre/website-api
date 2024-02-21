@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Sidebar(){
     return(
         <main id="sidebar" className="w-1/4 max-lg:hidden">
-            <div className="w-full max-h-[700px] bg-slate-200 m-4 rounded-xl sticky top-[100px]" >
+            <div className="w-full max-h-[700px] bg-slate-200 m-4 rounded-xl sticky top-[150px]" >
                 <ScrollShadow size={100} className="w-full max-h-[700px]" visibility="none">
                     <section className="ml-4 flex flex-col gap-10 mt-5 mb-5">
                         <div>

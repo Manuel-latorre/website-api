@@ -45,11 +45,11 @@ export default function Routes(){
                 </li>
                 <li className="flex items-center justify-between bg-teal-400 bg-opacity-40 p-2 rounded-lg">
                     <p className="font-bold text-teal-700">PUT</p>
-                    <p className="text-teal-700">productId?query=add</p>
+                    <p className="text-teal-700">/products-cart/productId?query=add</p>
                 </li>
                 <li className="flex items-center justify-between bg-teal-400 bg-opacity-40 p-2 rounded-lg">
                     <p className="font-bold text-teal-700">PUT</p>
-                    <p className="text-teal-700">productId?query=del</p>
+                    <p className="text-teal-700">/products-cart/productId?query=del</p>
                 </li>
                 <li className="flex items-center justify-between bg-red-500 bg-opacity-20 p-2 rounded-lg">
                     <p className="text-red-600 font-bold">DELETE</p>
