@@ -5,7 +5,7 @@ export default function Sidebar(){
     return(
         <main id="sidebar" className="w-1/4 max-lg:hidden">
             <div className="w-full max-h-[700px] bg-slate-200 m-4 rounded-xl sticky top-[150px]" >
-                <ScrollShadow size={100} className="w-full max-h-[700px]" visibility="none">
+                <ScrollShadow className="w-full max-h-[600px]">
                     <section className="ml-4 flex flex-col gap-10 mt-5 mb-5">
                         <div>
                             <div className="flex items-center gap-2 ml-4">
